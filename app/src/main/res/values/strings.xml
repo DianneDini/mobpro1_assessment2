@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">mobpro1_assessment2</string>
+    <string name="app_name">HealthMemo</string>
+    <string name="list_kosong">Anda belum memasukkan data apapun!</string>
+    <string name="ilustrasi">Image %1$s</string>
+    <string name="x_diklik">Data %1$s diklik!</string>
+    <string name="tambah_catatan">Tambah Data</string>
+    <string name="nama">Nama</string>
+    <string name="usia">Usia</string>
+    <string name="gejala">Gejala</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="kembali">Kembali</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_catatan">Ubah Data</string>
+    <string name="invalid">Semua data harus diisi!</string>
+    <string name="lainnya">Opsi lainnya</string>
+    <string name="hapus">Hapus Data </string>
+    <string name="pesan_hapus">Hapus Data Ini?</string>
+    <string name="tombol_hapus">Hapus</string>
+    <string name="tombol_batal">Batal</string>
+    <string name="list">Tampilan list</string>
+    <string name="grid">Tampilan grid</string>
 </resources>
