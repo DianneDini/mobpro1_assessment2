@@ -7,8 +7,8 @@
     <string name="simpan">Save</string>
     <string name="tombol_hapus">Delete</string>
     <string name="tombol_batal">Cancel</string>
-    <string name="list_kosong">You haven\'t entered any data!</string>
-    <string name="x_diklik">Data %1$s clicked!</string>
+    <string name="list_kosong">You haven\'t entered any data yet, please fill in your health information now to start effectively monitoring your health condition!</string>
+    <string name="x_diklik">%1$s\'s health data is clicked!</string>
     <string name="tambah_catatan">Add Data</string>
     <string name="gejala">Symptom</string>
     <string name="diagnosis">Diagnosis</string>
@@ -19,4 +19,25 @@
     <string name="pesan_hapus">Delete this data?</string>
     <string name="list">List view</string>
     <string name="grid">Grid view</string>
+    <string name="health_status_recovered">Recovered</string>
+    <string name="health_status_improving">Improving</string>
+    <string name="health_status_stable">Stable</string>
+    <string name="health_status_need_care">Needs Advanced Care</string>
+    <string name="health_status_critical">Critical</string>
+
+    <string-array name="health_status_options">
+        <item>@string/health_status_recovered</item>
+        <item>@string/health_status_improving</item>
+        <item>@string/health_status_stable</item>
+        <item>@string/health_status_need_care</item>
+        <item>@string/health_status_critical</item>
+    </string-array>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string-array name="gender_options">
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+    </string-array>
 </resources>

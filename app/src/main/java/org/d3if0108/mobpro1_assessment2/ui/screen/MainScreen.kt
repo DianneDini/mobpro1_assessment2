@@ -43,6 +43,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -136,12 +137,12 @@ fun ScreenContent(showList: Boolean, modifier: Modifier, navController: NavHostC
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = stringResource(id = R.string.list_kosong))
+            Text(text = stringResource(id = R.string.list_kosong), textAlign = TextAlign.Center)
             Image(
                 painter = painterResource(gambar.imageResId),
                 contentDescription = stringResource(R.string.ilustrasi),
                 contentScale = ContentScale.Crop,
-                modifier = Modifier.size(180.dp) .padding(16.dp)
+                modifier = Modifier.size(200.dp) .padding(16.dp)
             )
         }
     }

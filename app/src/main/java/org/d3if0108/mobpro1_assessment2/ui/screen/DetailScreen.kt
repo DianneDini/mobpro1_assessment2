@@ -40,6 +40,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
@@ -274,13 +275,10 @@ fun FormUser(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .border(1.dp, Color.Gray, RoundedCornerShape(4.dp)),
+                .border(1.dp, Color.Gray, shape = RoundedCornerShape(4.dp)),
             verticalArrangement = Arrangement.spacedBy(1.dp)
         ) {
-            val genderOptions = listOf(
-                "Pria",
-                "Wanita",
-            )
+            val genderOptions = stringArrayResource(id = R.array.gender_options)
             genderOptions.forEachIndexed { index, option ->
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -288,13 +286,12 @@ fun FormUser(
                 ) {
                     RadioButton(
                         selected = index == selectedGenderIndex.value,
-                        onClick = { selectedGenderIndex.value = index
-                        },
+                        onClick = { selectedGenderIndex.value = index },
                         colors = RadioButtonDefaults.colors(selectedColor = MaterialTheme.colorScheme.primary)
                     )
                     Text(
                         text = option,
-                        modifier = Modifier.padding(start = 1.dp),
+                        modifier = Modifier.padding(start = 8.dp),
                     )
                 }
             }
@@ -324,16 +321,10 @@ fun FormUser(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .border(1.dp, Color.Gray, RoundedCornerShape(4.dp)),
+                .border(1.dp, Color.Gray, shape = RoundedCornerShape(4.dp)),
             verticalArrangement = Arrangement.spacedBy(1.dp)
         ) {
-            val healthStatusOptions = listOf(
-                "Sembuh",
-                "Membaik",
-                "Stabil",
-                "Perlu Perawatan Lanjutan",
-                "Kritis"
-            )
+            val healthStatusOptions = stringArrayResource(id = R.array.health_status_options)
             healthStatusOptions.forEachIndexed { index, option ->
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -341,14 +332,12 @@ fun FormUser(
                 ) {
                     RadioButton(
                         selected = index == selectedHealthStatusIndex.value,
-                        onClick = {
-                            selectedHealthStatusIndex.value = index
-                        },
+                        onClick = { selectedHealthStatusIndex.value = index },
                         colors = RadioButtonDefaults.colors(selectedColor = MaterialTheme.colorScheme.primary)
                     )
                     Text(
                         text = option,
-                        modifier = Modifier.padding(start = 1.dp),
+                        modifier = Modifier.padding(start = 8.dp),
                     )
                 }
             }
